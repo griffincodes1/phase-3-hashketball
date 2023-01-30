@@ -1,4 +1,5 @@
-# Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -126,4 +127,9 @@ def game_hash
   }
 end
 
-# Write code here
+# puts game_hash[:home][:players]
+# puts game_hash[:away][:players]
+
+def all_players game
+  game[:home][:players].push(game[:away][:players])
+end
